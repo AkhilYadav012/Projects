@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div>
+        <h1>FORM</h1><hr>
+        <form action="form.php">
+            <label for="name"> Username:</label>
+            <input type="text" name="name" id="name" placeholder="7 to 10 Aplhabets">
+            <br><br><br>
+            <label for="sectionid">Best Player:</label>
+            <label for="sectionid">
+                <input type="radio" value="section a" name="section" id="sectionida">Messi
+
+            </label>
+            <label for="sectionid">
+                <input type="radio" value="section b" name="section" id="sectionidb">Ronaldo
+            </label>
+            <br><br><br>
+            <input type="checkbox" name="canteen" id="canteen" class="red">
+            <label for="canteend">Meet Ronaldo/Messi</label>
+            <textarea name="explain" id="explain" cols="30" rows="1.5" placeholder="Why?"></textarea><br><br><br>
+            <label for="car">Car:</label>
+            <select name="car" id="car">
+                <option value="nocar">Select Your Car</option>
+                <option value="buggati">Buggati</option>
+                <option value="ferari">Ferari</option>
+                <option value="auto">Auto Rickshaw</option>
+            </select><br><br><br>
+            <label for="date">DOB:</label>
+            <input type="date" name="date" id="date"><br><br><br>
+            <label for="age">Age:</label>
+            <input type="number" name="age" min="1" max="110"><br><br><br>
+            <input type="button" value="Click Me" onclick="alert('U Know HTML')">
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </form>
+
+    </div>
+</body>
+
+</html>
