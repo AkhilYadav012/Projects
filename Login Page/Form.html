@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+   
+</head>
+
+<body>
+    <div id="login-container">
+        <h1>FORM</h1><hr>
+        <form  id="login-form"  >
+            <label for="name"> Username:</label>
+            <input type="text" name="name" id="name" value="" placeholder="5 to 10 Aplhabets" required>
+            <span id="Message"></span>
+            <br><br><br>
+            <label for="sectionid">Best Player:</label>
+            <label for="sectionid">
+                <input type="radio" value="section a" name="section" id="sectionida">Messi
+
+            </label>
+            <label for="sectionid">
+                <input type="radio" value="section b" name="section" id="sectionidb">Ronaldo
+            </label>
+            <br><br><br>
+            <input type="checkbox" name="canteen" id="canteen" class="red">
+            <label for="canteend">Meet Ronaldo/Messi</label>
+            <textarea name="explain" id="explain" cols="5" rows="1" placeholder="Y/N?"></textarea><br><br><br>
+            <label for="car">Car:</label>
+            <select name="car" id="car">
+                <option value="nocar">Select Your Car</option>
+                <option value="bugatti">Bugatti</option>
+                <option value="ferrari">Ferrari</option>
+                <option value="auto">Auto Rickshaw</option>
+            </select><br><br><br>
+            <label for="date">DOB:</label>
+            <input type="date" name="date" id="date"><br><br><br>
+            <label for="age">Age:</label>
+            <input type="number" name="age" min="1" max="110"><br><br><br>
+            <input type="reset" value="Reset"  onclick="clearErrors()">
+            <button type="button" onclick="validate()">Login</button>
+            
+        </form>
+        <div id="user-info">
+            <h3>Welcome <span id="username-display"></span>!</h3>
+          </div>
+
+    </div>
+    <script src ="JS/Form.js" ></script>
+</body>
+
+</html>
